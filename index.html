@@ -1,9 +1,39 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>H'd Twice</title>
-  </head>
-  <body>
-    <h1>H'd Twice</h1>
-    <p>arriving 12th of december, 2023</p>
-  </body>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <img id="background-image" src="H'd twice background.jpeg">
+    <h1 style="color: rgb(255, 255, 255);">H'd Twice</h1>
+    <p style="color: rgb(255, 255, 255);">arriving 12th of december, 2023</p>
+    
+    <script>
+        function resizeBackground() {
+            var background = document.getElementById("background-image");
+            var windowWidth = window.innerWidth;
+            var windowHeight = window.innerHeight;
+            background.style.width = windowWidth + "px";
+            background.style.height = windowHeight + "px";
+        }
+
+        window.addEventListener("resize", resizeBackground);
+        resizeBackground();
+    </script>
+</body>
 </html>
