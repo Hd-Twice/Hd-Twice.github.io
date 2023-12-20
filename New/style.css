@@ -1,0 +1,29 @@
+body {
+    background-color: #343434;
+    font-family: Cambria;
+    color: white;
+    
+    .top-image {
+        position: relative;
+    }
+    
+    .center-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 500%;
+        font-weight: bold;
+        color: rgb(255, 255, 255, 0.8);
+    }
+
+    .heading {
+        font-size: 36px;
+        font-weight: 900;
+    }
+
+    a {
+        color: lightblue;
+        text-decoration: underline;
+    }
+}
