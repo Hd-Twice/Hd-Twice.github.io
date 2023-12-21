@@ -1,5 +1,5 @@
 body {
-    background-color: #343434;
+    background-color: #333333;
     font-family: Cambria;
     color: white;
     
@@ -26,4 +26,19 @@ body {
         color: lightblue;
         text-decoration: underline;
     }
+
+    .links .link {
+        background-color: white;
+        border: 2px solid #333333;
+        padding: 5px 5px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        display: block;
+        border-radius: 8px;
+  }
+
+  .links .link:hover {
+        background-color: #D3D3D3;
+  }
 }
